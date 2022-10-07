@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html, body{
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+    line-height: 70px;
+}
+
+header h3{
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 10px 7%;
+}
+
+.hero-section{
+    color: #fff;
+    height: 75vh;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    background: #181818;
+}
+
+.heroSect-txt-col {
+    margin-top: 3%;
+}
+
+.description-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.description-col .intro h1{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.full-msg p{
+    padding: 18px 0;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+.full-msg #dob{
+    text-align: center;
+}
+
+.heroSect-img-col{
+    position: relative;
+    flex-basis: 35%;
+    height: 55vh;
+}
+
+img.whitney-img{
+    position: absolute;
+    right: -16%;
+    top: 0;
+    z-index: 0;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.about-col-1 {
+    margin-top: 10%;
+}
+
+h2.about-h2 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+}
+
+p.description {
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: justify;
+    font-style: italic;
+}
+
+.hidden{
+    display: none;
+}
+
+img.picture2 {
+    margin-left: 100px;
+}
+
+img.picture3 {
+    margin-top: 25%;
+}
+
+.family-tribute{
+    background: linear-gradient(180deg,#181818,#292828);
+    color: #fff;
+}
+
+.content-box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-author{
+    display: flex;
+    justify-content: end;
+}
+
+.tribute-h2{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.content-box1 q, .quote-author p{
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+.content-box1 q{
+    margin: 3% 0 0 5%;
+}
+
+.quote-author p{
+    margin-right: 8%;
+    padding: 3% 0;
+}
+
+hr{
+    border: 1px solid #7c7c7c;
+}
+
+@media screen and (max-width: 868px) {
+    img.whitney-img{
+        transform: scaleX(-1);
+        right: 0;
+        width: 400px;
+    }
+
+    .hero-section{
+        height: 45vh;
+    }
+
+    .heroSect-img-col{
+        height: 20vh;
+    }
+
+    .about-row{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    .about-col-3{
+        order: 1;
+    }
+    
+    .about-col-3 img.picture3{
+        margin: 0;
+    }
+
+    .about-col-2{
+        order: 2;
+    }
+
+    /* .about-col-2 img.picture2{
+        margin: 0;
+    } */
+
+    .about-col-2 img.picture1{
+        display: none;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+
+    .about-col-1{
+        order: 3;
+        margin: 7% 0;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .description-col{
+        gap: 16px !important;
+    }
+
+    .description-col .intro h1{
+        font-size: 30px;
+    }
+
+    h2.about-h2, .tribute-h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .full-msg p, p.description, .quote-author p, q{
+        font-size: 16px;
+    }
+
+    img.whitney-img{
+        right: -100px;
+    }
+
+    .picture1, .picture2, .picture3, .hidden{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    img.whitney-img{
+        width: 250px;
+        height: 250px;
+        right: -60px;
+        z-index: 1;
+    }
+
+    .heroSect-txt-col{
+        z-index: 2;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .heroSect-txt-col{
+        margin-left: 18%;
+    }
+}
